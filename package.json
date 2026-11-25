@@ -1,0 +1,16 @@
+{
+  "name": "fritzcash-railway",
+  "version": "1.0.1",
+  "private": true,
+  "description": "FritzCash \u2014 portail de demandes de recharge Meru et services PayPal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FritzCash — Services financiers digitaux</title>
+  <meta name="description" content="FritzCash facilite vos demandes de recharge Meru, services PayPal et paiements via NatCash et MonCash en Haïti.">
+  <meta name="keywords" content="FritzCash, recharge Meru, PayPal Haïti, NatCash, MonCash, portefeuille numérique, services digitaux">
+  <meta name="robots" content="index,follow"><meta name="theme-color" content="#102b5c">
+  <link rel="canonical" href="https://fritzcash.online/">
+  <meta property="og:type" content="website"><meta property="og:title" content="FritzCash — Votre univers de services digitaux">
+  <meta property="og:description" content="Recharge Meru, services PayPal et suivi sécurisé de vos transactions.">
+  <meta property="og:url" content="https://fritzcash.online/">
+  <meta property="og:image" content="https://fritzcash.online/assets/og-image.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FinancialService","name":"FritzCash","url":"https://fritzcash.online/","areaServed":"HT","description":"Plateforme de demandes de recharge Meru et services PayPal avec validation manuelle des paiements."}
+  </script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">F</span> FritzCash</a>
+<nav><a href="#services">Services</a><a href="#how">Comment ça marche</a><a href="#account">Mon compte</a></nav>
+<button class="btn small" id="logoutBtn" hidden>Déconnexion</button></header>
+<main>
+<section class="hero"><div><p class="eyebrow">VOTRE UNIVERS DE SERVICES DIGITAUX</p><h1>Vos transactions digitales, <span>en toute simplicité.</span></h1>
+<p class="lead">Faites vos demandes de recharge Meru et de services PayPal. Payez manuellement via NatCash ou MonCash, joignez votre reçu et votre ID de transaction, puis suivez la vérification.</p>
+<a class="btn" href="#account">Commencer maintenant</a></div><div class="hero-card"><div class="mini-label">FRITZCASH WALLET</div><div class="wallet-symbol">₣</div><h3>Un espace. Vos opérations.</h3><p>Suivi des demandes · Historique · Assistance</p><div class="secure">● Paiements soumis à vérification</div></div></section>
+<section id="services" class="section"><p class="eyebrow">NOS SOLUTIONS</p><h2>Nos services</h2><div class="cards">
+<article class="service"><div class="service-icon">↗</div><h3>Recharge Meru</h3><p>Soumettez une demande de recharge Meru et renseignez votre identifiant de réception.</p></article>
+<article class="service"><div class="service-icon">P</div><h3>Services PayPal</h3><p>Demandez une opération liée à PayPal et suivez son statut depuis votre compte.</p></article>
+<article class="service"><div class="service-icon">◎</div><h3>Portefeuille & historique</h3><p>Consultez votre solde enregistré et l'historique de vos transactions validées.</p></article></div></section>
+<section id="how" class="section muted"><p class="eyebrow">PROCESSUS</p><h2>Comment ça marche ?</h2><div class="steps"><div><b>01</b><h3>Créez votre compte</h3><p>Inscrivez-vous avec votre nom, votre e-mail et votre téléphone.</p></div><div><b>02</b><h3>Envoyez une demande</h3><p>Choisissez un service et indiquez les informations demandées.</p></div><div><b>03</b><h3>Effectuez le paiement</h3><p>Payez via NatCash ou MonCash et joignez votre reçu.</p></div><div><b>04</b><h3>Suivez la validation</h3><p>L'équipe vérifie le paiement et met à jour votre demande.</p></div></div></section>
+<section id="account" class="section"><p class="eyebrow">ESPACE SÉCURISÉ</p><h2>Votre espace FritzCash</h2><div id="authPanel" class="panel auth-grid">
+<form id="loginForm"><h3>Connexion</h3><label>E-mail<input type="email" id="loginEmail" required autocomplete="email"></label><label>Mot de passe<input type="password" id="loginPassword" required autocomplete="current-password"></label><button class="btn block">Se connecter</button></form>
+<form id="signupForm"><h3>Créer un compte</h3><label>Nom complet<input id="fullName" required maxlength="100"></label><label>Téléphone<input id="phone" required maxlength="30" placeholder="+509..."></label><label>E-mail<input type="email" id="signupEmail" required></label><label>Mot de passe<input type="password" id="signupPassword" required minlength="8"></label><button class="btn block">Créer mon compte</button></form>
+</div><div id="dashboard" hidden><div class="dash-head"><div><h3 id="welcome"></h3><p class="muted-text">Voici votre espace personnel.</p></div><div class="balance"><small>Solde disponible</small><strong id="balance">0.00 USD</strong></div></div>
+<div class="dash-grid"><form id="orderForm" class="panel"><h3>Nouvelle demande</h3><label>Service<select id="serviceType"><option value="meru_recharge">Recharge Meru</option><option value="paypal_service">Service PayPal</option></select></label><label>Nom complet<input id="customerName" required maxlength="100" autocomplete="name"></label><label>Numéro de téléphone<input id="customerPhone" required maxlength="30" autocomplete="tel" placeholder="+509..."></label><label>Adresse e-mail<input id="customerEmail" type="email" required maxlength="160" autocomplete="email"></label><label>Montant (USD)<input id="amount" type="number" min="5" step="0.01" required></label><label>Identifiant Meru / e-mail PayPal<input id="destination" required maxlength="160"></label><label>Méthode de paiement<select id="paymentMethod"><option value="natcash">NatCash</option><option value="moncash">MonCash</option></select></label><div class="payment-info"><b>Envoyer le paiement à :</b><p>NatCash : +509 5574 3483</p><p>MonCash : +509 3618 9702</p><small>Vérifiez le numéro et le montant avant d'envoyer.</small></div><label>ID de transaction du paiement<input id="paymentReference" required maxlength="100" placeholder="ID / référence exact(e) de transaction"></label><label>Preuve de paiement (image, max. 5 Mo)<input id="receipt" type="file" accept="image/png,image/jpeg,image/webp" required></label><button class="btn block">Soumettre la demande</button></form>
+<div class="panel"><h3>Mes transactions</h3><div id="transactions" class="transactions"><p>Chargement...</p></div></div></div></div>
+<div id="adminPanel" class="panel admin-panel" hidden><div class="dash-head"><div><p class="eyebrow">CONTRÔLE ADMINISTRATEUR</p><h2>Administration</h2></div><span class="admin-tag">ADMIN</span></div><div class="admin-tabs"><button class="tab active" data-tab="pending">Demandes</button><button class="tab" data-tab="users">Utilisateurs</button></div><div id="adminContent"></div></div>
+<p id="notice" role="status" class="notice"></p></section>
+</main>
+<footer><div><a class="brand" href="#"><span class="brand-mark">F</span> FritzCash</a><p>Votre partenaire de services digitaux.</p></div><div><b>Contact & paiements</b><p>NatCash : +509 5574 3483</p><p>MonCash : +509 3618 9702</p><p><a href="mailto:fritzbertsainthilaire64@gmail.com">fritzbertsainthilaire64@gmail.com</a></p></div><p class="copyright">© <span id="year"></span> FritzCash. Tous droits réservés.</p></footer>
+<script type="module" src="/app.js"></script>
+</body></html>

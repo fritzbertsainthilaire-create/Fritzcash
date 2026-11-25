@@ -1,0 +1,27 @@
+{
+  "site_name": "FritzCash",
+  "hosting": "Railway",
+  "site_url": "https://votre-domaine.com",
+  "contact_email": "fritzbertsainthilaire64@gmail.com",
+  "payments": {
+    "natcash": "+50955743483",
+    "moncash": "+50936189702",
+    "mode": "manual_proof_and_admin_review"
+  },
+  "meru": {
+    "minimum_recharge_usd": 5
+  },
+  "supabase": {
+    "url": "https://VOTRE-PROJET.supabase.co",
+    "anon_key": "VOTRE_CLE_ANON"
+  },
+  "receipt": {
+    "max_size_mb": 5,
+    "accepted": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp"
+    ]
+  }
+}
